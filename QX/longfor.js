@@ -1,4 +1,4 @@
-// 龙珠签到111
+// 龙珠签到
 const {
   AnError,
   isRequest,
@@ -16,31 +16,32 @@ const {
   done,
 } = nobyda();
 
-function Start() {
+function Start(headers) {
   const a = new Promise((resolve, rejects) => {
-    LHSing(function (err, res, body) {
+    LHSing(headers, function (err, res, body) {
       const r = JSON.parse(body);
       if (r.code == '0000') {
-        notify('龙珠签到', '', '签到成功');
+        notify('龙珠签到', '', '签到成功' + body);
       } else {
         notify('龙珠签到', '', '签到失败' + body);
       }
       resolve();
     });
   });
-  Promise.all([a]).then(() => {
+  Promise.all([a, b]).then(() => {
     done();
   });
 }
 
-function LHSing(cb) {
+
+function LHSing(headers, cb) {
   const url = `https://longzhu.longfor.com/proxy/lmarketing-task-api-mvc-prod/openapi/task/v1/signature/clock`;
   const method = `POST`;
   const body = `{"activity_no":"11111111111686241863606037740000"}`;
   const myRequest = {
     url: url,
     method: method,
-    headers: {},
+    headers: headers,
     body: body,
   };
   post(myRequest, cb);
@@ -311,4 +312,13 @@ function nobyda() {
     done,
   };
 }
-Start();
+
+if (typeof $request != 'undefined') {
+  const headers = JSON.stringify($request.headers);
+  write(headers, 'longfor');
+  notify('龙湖', '', 'Cookie获取成功');
+  done();
+} else {
+  const headers = JSON.parse(read('longfor'));
+  Start(headers);
+}
