@@ -2,6 +2,6 @@
   "name": "My Script",
   "description": "9.28更新,更新失败请挂VPN.",
   "task": [
-    "0 0 0 * * * https://raw.githubusercontent.com/peiqianlong/script-config/main/QX/longfor.js, tag=SIGN,enabled=true"
+    "0 15 7 * * * https://raw.githubusercontent.com/peiqianlong/script-config/main/QX/longfor.js, tag=SIGN,enabled=true"
   ]
 }
