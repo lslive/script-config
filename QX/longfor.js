@@ -1,4 +1,3 @@
-
 // 龙珠签到
 (function Start() {
   const a = new Promise((resolve, rejects) => {
@@ -12,54 +11,19 @@
       resolve();
     });
   });
-  const b = new Promise((resolve, rejects) => {
-    LHHuaTi(function (err, res, body) {
-      console.log(body);
-      const r = JSON.parse(body);
-      if (r.code == '0000') {
-        notify('龙珠话题', '', '签到成功');
-      } else {
-        notify('龙珠话题', '', '签到失败' + body);
-      }
-      resolve();
-    });
-  });
-  Promise.all([a, b]).then(() => {
+  Promise.all([a]).then(() => {
     done();
   });
 })();
 
 function LHSing(cb) {
-  const headers = {
-    'Accept-Encoding': `gzip, deflate, br`,
-    Host: `longzhu.longfor.com`,
-    Origin: `https://longzhu.longfor.com`,
-    'Sec-Fetch-Dest': `empty`,
-    Connection: `keep-alive`,
-    'Accept-Language': `zh-CN,zh-Hans;q=0.9`,
-    'Sec-Fetch-Site': `same-origin`,
-    'Content-Type': `application/json;charset=UTF-8`,
-    'User-Agent': `Mozilla/5.0 (iPhone; CPU iPhone OS 16_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.42(0x18002a29) NetType/WIFI Language/zh_CN miniProgram/wx50282644351869da`,
-    'X-LF-DXRisk-Source': `5`,
-    Referer: `https://longzhu.longfor.com/longball-homeh5/`,
-    Accept: `application/json, text/plain, */*`,
-    'X-LF-Bu-Code': `C20400`,
-    'X-LF-Channel': `C2`,
-    'Sec-Fetch-Mode': `cors`,
-    token: token,
-    'X-LF-DXRisk-Captcha-Token': XLFDXRiskCaptchaToken,
-    'X-LF-DXRisk-Token': XLFDXRiskToken,
-    Cookie: Cookie,
-    'X-GAIA-API-KEY': XGAIAAPIKEY,
-    'X-LF-UserToken': XLFUserToken,
-  };
   const url = `https://longzhu.longfor.com/proxy/lmarketing-task-api-mvc-prod/openapi/task/v1/signature/clock`;
   const method = `POST`;
   const body = `{"activity_no":"11111111111686241863606037740000"}`;
   const myRequest = {
     url: url,
     method: method,
-    headers: headers,
+    headers: {},
     body: body,
   };
   post(myRequest, cb);
