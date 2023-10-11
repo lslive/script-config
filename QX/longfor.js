@@ -28,7 +28,7 @@ function Start(headers) {
       resolve();
     });
   });
-  Promise.all([a, b]).then(() => {
+  Promise.all([a]).then(() => {
     done();
   });
 }
