@@ -1,6 +1,6 @@
 {
   "name": "My Script",
-  "description": "更新失败请挂VPN.",
+  "description": "更新失败请挂VPN",
   "task": [
     "1 0 * * * https://raw.githubusercontent.com/peiqianlong/script-config/main/QX/longfor.js, tag=龙湖,enabled=true"
   ]
