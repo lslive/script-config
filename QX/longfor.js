@@ -1,19 +1,3 @@
-const {
-  AnError,
-  isRequest,
-  isJSBox,
-  isSurge,
-  isQuanX,
-  isLoon,
-  isNode,
-  notify,
-  write,
-  read,
-  get,
-  post,
-  time,
-  done,
-} = nobyda();
 
 // 龙珠签到
 (function Start() {
