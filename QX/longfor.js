@@ -1,5 +1,22 @@
 // 龙珠签到
-(function Start() {
+const {
+  AnError,
+  isRequest,
+  isJSBox,
+  isSurge,
+  isQuanX,
+  isLoon,
+  isNode,
+  notify,
+  write,
+  read,
+  get,
+  post,
+  time,
+  done,
+} = nobyda();
+
+function Start() {
   const a = new Promise((resolve, rejects) => {
     LHSing(function (err, res, body) {
       const r = JSON.parse(body);
@@ -14,7 +31,7 @@
   Promise.all([a]).then(() => {
     done();
   });
-})();
+}
 
 function LHSing(cb) {
   const url = `https://longzhu.longfor.com/proxy/lmarketing-task-api-mvc-prod/openapi/task/v1/signature/clock`;
@@ -294,3 +311,4 @@ function nobyda() {
     done,
   };
 }
+Start();
