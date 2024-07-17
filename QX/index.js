@@ -2,7 +2,7 @@
  * 工具类
  * @return {{read: ((function(*=): (*|null|undefined))|*), isRequest: boolean, isLoon: boolean, isQuanX: boolean, isNode: boolean, done: ((function(*=): (*|undefined))|*), notify: notify, isSurge: boolean, post: post, AnError: (function(*, *=, *=, *=, *): void), get: get, time: (function(): void), isJSBox: boolean, write: ((function(*=, *=): (*|undefined))|*)}}
  */
-function nobyda() {
+function Env() {
   const start = Date.now();
   // 判断是否是重写
   const isRequest = typeof $request != 'undefined';
