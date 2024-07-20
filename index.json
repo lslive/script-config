@@ -3,7 +3,7 @@
   "description": "tg频道",
   "task": [
     {
-      "config": "30 8 * * * https://raw.githubusercontent.com/lslive/script-config/main/yun-shan-fu/index.js, tag=云闪付, img-url=https://raw.githubusercontent.com/lslive/script-config/main/icon/ysf.png, enabled=true",
+      "config": "30 8 * * * https://raw.githubusercontent.com/lslive/script-config/main/yun-shan-fu/index.js, tag=云闪付, img-url=https://raw.githubusercontent.com/lslive/script-config/main/icon/ysf-logo.png, enabled=true",
       "addons": "https://raw.githubusercontent.com/lslive/script-config/main/yun-shan-fu/index.conf, tag=云闪付获取token"
     }
   ]
