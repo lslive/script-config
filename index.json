@@ -5,6 +5,10 @@
     {
       "config": "30 8 * * * https://raw.githubusercontent.com/lslive/script-config/main/yun-shan-fu/index.js, tag=云闪付, img-url=https://raw.githubusercontent.com/lslive/script-config/main/icon/ysf-logo.png, enabled=true",
       "addons": "https://raw.githubusercontent.com/lslive/script-config/main/yun-shan-fu/index.conf, tag=云闪付获取token"
+    },
+    {
+      "config": "32 7 * * * https://raw.githubusercontent.com/lslive/script-config/main/hai-di-lao/index.js, tag=海底捞, img-url=https://raw.githubusercontent.com/lslive/script-config/main/icon/hdl-logo.png, enabled=true",
+      "addons": "https://raw.githubusercontent.com/lslive/script-config/main/hai-di-lao/index.conf, tag=海底捞获取token"
     }
   ]
 }
