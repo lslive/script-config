@@ -9,6 +9,10 @@
     {
       "config": "32 7 * * * https://raw.githubusercontent.com/lslive/script-config/main/hai-di-lao/index.js, tag=海底捞, img-url=https://raw.githubusercontent.com/lslive/script-config/main/icon/hdl-logo.png, enabled=true",
       "addons": "https://raw.githubusercontent.com/lslive/script-config/main/hai-di-lao/index.conf, tag=海底捞获取token"
+    },
+    {
+      "config": "32 7 * * * https://raw.githubusercontent.com/lslive/script-config/main/longfor/index.js, tag=龙湖签到, img-url=https://raw.githubusercontent.com/lslive/script-config/main/icon/longfor-logo.png, enabled=true",
+      "addons": "https://raw.githubusercontent.com/lslive/script-config/main/longfor/index.conf, tag=海底捞获取token"
     }
   ]
 }
