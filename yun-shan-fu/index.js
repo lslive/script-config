@@ -1,3 +1,13 @@
+/**
+Title: 云闪付 签到打卡
+Nomination / Category: QuanmuteX
+Written by: lslive
+Date: 2025-7-31
+Draft Version: 0.1
+Contact Info: https://github.com/lslive
+Notes: 只测试过圈X，其它环境请自行尝试
+*/
+
 
 const $ = new Env(`云闪付`);
 const ckName = "YSF-CK";

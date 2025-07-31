@@ -1,10 +1,12 @@
-/**************************************
-
-脚本名称：支付宝小程序 海底捞 签到 只持单账号
-脚本兼容：Surge、QuantumultX、Loon、Shadowrocket、Node.js
-只测试过圈X，其它环境请自行尝试
-
-******************************************/
+/**
+Title: Longfor 支付宝小程序 海底捞 签到
+Nomination / Category: Surge、QuantumultX、Loon、Shadowrocket、Node.js
+Written by: lslive
+Date: 2025-7-31
+Draft Version: 0.1
+Contact Info: https://github.com/lslive
+Notes: 只测试过圈X，其它环境请自行尝试
+*/
 // env.js 全局
 const $ = new Env("海底捞");//脚本名称
 const ckName = "hdl_data";//环境变量声明
