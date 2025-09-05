@@ -15,7 +15,7 @@
       "addons": "https://raw.githubusercontent.com/lslive/script-config/main/longfor/index.conf, tag=龙湖签到token"
     },
     {
-      "config": "00 9 * * * https://raw.githubusercontent.com/lslive/script-config/main/guo-bu/index.js, tag=国补, img-url=https://raw.githubusercontent.com/lslive/script-config/main/icon/longfor-logo.png, enabled=true",
+      "config": "0 9 * * 1 https://raw.githubusercontent.com/lslive/script-config/main/guo-bu/index.js, tag=国补, img-url=https://raw.githubusercontent.com/lslive/script-config/main/icon/longfor-logo.png, enabled=true",
       "addons": "https://raw.githubusercontent.com/lslive/script-config/main/guo-bu/index.conf, tag=国补token"
     },
     {
