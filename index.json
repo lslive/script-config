@@ -23,7 +23,7 @@
       "addons": "https://raw.githubusercontent.com/lslive/script-config/main/jd/index.conf, tag=京东token"
     },
     {
-      "config": "00 8,10,12,14,16,18,20 * * * https://raw.githubusercontent.com/lslive/script-config/main/mei-di/index.js, tag=美的, img-url=https://raw.githubusercontent.com/lslive/script-config/main/icon/longfor-logo.png, enabled=true",
+      "config": "32 7 * * * https://raw.githubusercontent.com/lslive/script-config/main/mei-di/index.js, tag=美的, img-url=https://raw.githubusercontent.com/lslive/script-config/main/icon/longfor-logo.png, enabled=true",
       "addons": "https://raw.githubusercontent.com/lslive/script-config/main/mei-di/index.conf, tag=美的token"
     }
   ]
